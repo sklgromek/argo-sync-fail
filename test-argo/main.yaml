@@ -77,6 +77,6 @@ spec:
       containers:
       - name: nginx
         image: nginx:stable-alpine3.24-perl
-        command: ["sleep", "15s"]
+        command: ["sleep", "25s"]
       restartPolicy: Never
   backoffLimit: 0
