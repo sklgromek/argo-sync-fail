@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.k8s.io/nginx-slim:0.8
+        image: nginx:stable-alpine3.24-perl
         ports:
         - containerPort: 80
           name: web
@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.k8s.io/nginx-slim:0.8
+        image: nginx:stable-alpine3.24-perl
         command: ["sleep", "10s"]
       restartPolicy: Never
   backoffLimit: 0
