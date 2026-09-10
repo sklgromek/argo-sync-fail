@@ -53,7 +53,7 @@ spec:
         - name: www
           mountPath: /usr/share/nginx/html
         env:
-          name: test
+        - name: test
           value: xd
   volumeClaimTemplates:
   - metadata:
